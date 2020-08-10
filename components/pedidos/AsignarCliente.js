@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Select from 'react-relect';
+import Select from 'react-select';
 
 const clientes = [
 	{ id: 1, nombre: 'Juan' },
@@ -13,11 +13,11 @@ const AsignarCliente = () => {
 
 	useEffect(() => {
 		console.log(cliente);
-	}, [cliente])
+	}, [cliente]);
 
 	const seleccionarCliente = clientes => {
 		setcliente(clientes);
-	}
+	};
 
 	return (
 		<Select
@@ -31,3 +31,5 @@ const AsignarCliente = () => {
 		/>
 	)
 }
+
+export default AsignarCliente;
